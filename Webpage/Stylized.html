@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HurtTree Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/HTLOGO.png">
+
+    <!-- MODEL VIEWER -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="side-item">
+            <p>Christian Connolly</p>
+            <p>HurtTree</p>
+        </div>
+        <a href="Index.html">
+            <div class="side-item" id="about-button">
+                <p>About</p>
+            </div>
+        </a>
+        <a href="GameJams.html">
+            <div class="side-item" id="game-jams-button">
+                <p>Game Jams</p>
+            </div>
+        </a>
+        <a href="LowPoly.html">
+            <div class="side-item" id="low-poly-button">
+                <p>Low Poly</p>
+            </div>
+        </a>
+        <div class="side-item" id="stylized-button">
+            <p>🠊 Stylized 🠈</p>
+        </div>
+        <a href="HighPoly.html">
+            <div class="side-item" id="high-poly-button">
+                <p>High Poly</p>
+            </div>
+        </a>
+        <a href="Contact.html">
+            <div class="side-item" id="contact-button">
+                <p>Contact</p>
+            </div>
+        </a>
+    </div>
+    <div class="main">
+        <p class="c">I have done quite a few stylized pieces for webcomic creators, and like to translate 2D art into 3D
+            space.</p>
+            <p class="c">Some of these would employ shaders or blend-shapes that will not work with the web model viewer.</p>
+        <p class="c">You can click and drag to pan around the models.</p>
+        <p class="c">WIP Come back soon!</p>
+        <br>
+        <div class="grid-container">
+            <div class="model-panel">
+                <model-viewer class="model" alt="A laser rifle with a stylized paintjob" src="models/LaserRifle.glb"
+                    poster="images/laserrifleposter.webp" exposure="0.65" disable-zoom auto-rotate
+                    interaction-prompt="none" shadow-intensity="1" camera-controls touch-action="pan-y">
+                </model-viewer>
+            </div>
+            <div class="model-panel">
+                <model-viewer class="model" alt="A scene from the comic Gator Days in 3D" src="models/GatorDays.glb"
+                    poster="images/gatorposter.webp" auto-rotate exposure="0.5" autoplay
+                    camera-orbit="-92.95deg 77.67deg 66.45m" field-of-view="30deg" disable-zoom
+                    interaction-prompt="none" shadow-intensity="1" camera-controls touch-action="pan-y"
+                    min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 85deg auto">
+                </model-viewer>
+            </div>
+            <div class="model-panel">
+                <model-viewer class="model" alt="An alley strewn with litter" src="models/EveTurnaround.glb"
+                    poster="images/eveposter.webp" exposure="0.5" autoplay field-of-view="22.98deg" disable-zoom
+                    shadow-intensity="1" camera-controls auto-rotate touch-action="pan-y" interaction-prompt="none">
+                </model-viewer>
+            </div>
+        </div>
+    </div>
+</body>
